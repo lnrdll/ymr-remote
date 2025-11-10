@@ -23,7 +23,7 @@ parameters:
      - kale
      - lettuce
    season: spring
-   targets:
+   targetId:
      - spring
 
  # Winter
@@ -32,5 +32,5 @@ parameters:
      - sweet potatoes
      - yams
    season: winter
-   targets:
+   targetId:
      - winter
