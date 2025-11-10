@@ -1,35 +1,37 @@
 templates:
- - service.yaml
+  - service.yaml
 
 targetIds:
- - spring
- - winter
+  - spring
+  - winter
 
 parameters:
- - values:
-   description: ymr
-   - targets:
-     - spring
-     - winter
+  # --- Shared values ---
+  - values:
+      description: ymr
+    targetId:
+      - spring
+      - winter
 
- # Spring
- - values:
-   roots:
-     - beets
-     - carrots
-     - radishes
-   leaves:
-     - spinach
-     - kale
-     - lettuce
-   season: spring
-   targets:
-     - spring
+  # --- Spring-specific values ---
+  - values:
+      roots:
+        - beets
+        - carrots
+        - radishes
+      leaves:
+        - spinach
+        - kale
+        - lettuce
+      season: spring
+    targetId:
+      - spring
 
- - values:
-   roots:
-     - sweet potatoes
-     - yams
-   season: winter
-   targets:
-     - winter
+  # --- Winter-specific values ---
+  - values:
+      roots:
+        - sweet potatoes
+        - yams
+      season: winter
+    targetId:
+      - winter
