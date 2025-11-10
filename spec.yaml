@@ -1,5 +1,5 @@
 templates:
-  - service.yaml
+  - https://github.com/lnrdll/ymr-remote/blob/main/vegetables/service.yaml
 
 targetIds:
   - spring
