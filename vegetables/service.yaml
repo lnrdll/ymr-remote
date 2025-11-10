@@ -1,0 +1,8 @@
+vegetables:
+  roots: # from-param-merge: {{ .roots }}
+    - beets
+    - carrots
+    - radishes
+  leaves: [] # from-param: {{ .leaves }}
+season: winter # from-param: {{ .season }}
+description: This is a test # This is a test for {{ .description }}
