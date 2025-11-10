@@ -5,4 +5,4 @@ vegetables:
     - radishes
   leaves: [] # from-param: {{ .leaves }}
 season: winter # from-param: {{ .season }}
-description: This is a test # from-param: This is a sub directory test for {{ .description }}
+description: This is a test # from-param: This is a directory test for {{ .description }}
